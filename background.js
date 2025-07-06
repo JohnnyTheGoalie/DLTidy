@@ -12,6 +12,12 @@ browser.downloads.onCreated.addListener(async (downloadItem) => {
     //Skip downloads created by an extension
     if (downloadItem.byExtensionId) return;
 
+    //Let blob downloads pass through
+    if (downloadItem.url.startsWith("blob:")) {
+        console.log("Skipping blob download:", downloadItem.url);
+        return;
+    }
+
     const filename = downloadItem.filename.split("\\").pop();
     const url = downloadItem.url;
 
