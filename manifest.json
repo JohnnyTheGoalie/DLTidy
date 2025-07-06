@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "DLTidy",
+  "version": "1.0",
+  "description": "A Firefox extension to declutter the download folder.",
+  "permissions": ["downloads", "storage", "alarms", "tabs"],
+  "web_accessible_resources": ["prompt.html"],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "author": "Jovan Lukovic",
+  "browser_action": {
+    "default_title": "DLTidy",
+    "default_popup": "popup.html"
+},
+  "icons": {
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  }
+}

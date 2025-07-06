@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Extension Settings</title>
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 20px;
+      color: #333;
+    }
+
+    h3 {
+      font-size: 18px;
+      margin-bottom: 12px;
+    }
+
+    .section {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+      margin-right: 10px;
+      transform: scale(1.2);
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #ddd;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+<h2 style="text-align: center;">DLTidy</h2>
+<!--
+<div class="section">
+    <h3>Download Default Behavior</h3>
+    <label><input type="radio" name="default" value="temp"> Temporary</label>
+    <label><input type="radio" name="default" value="perm"> Permanent</label>
+</div>
+
+<hr>
+-->
+<div class="section">
+    <label>
+        <input type="checkbox" id="enabledToggle"> Enable Extension
+    </label>
+</div>
+
+<script src="popup.js"></script>
+</body>
+</html>
